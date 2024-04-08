@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   retrieve-secret:
-    runs-on: azure-linux-runner
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
