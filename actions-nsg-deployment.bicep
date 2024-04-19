@@ -190,19 +190,19 @@ resource actions_NSG 'Microsoft.Network/networkSecurityGroups@2017-06-01' = {
           destinationAddressPrefixes: []
         }
       }
-      {
-        name: 'DenyInternetOutBoundOverwrite'
-        properties: {
-          protocol: '*'
-          sourcePortRange: '*'
-          destinationPortRange: '*'
-          sourceAddressPrefix: '*'
-          destinationAddressPrefix: 'Internet'
-          access: 'Deny'
-          priority: 400
-          direction: 'Outbound'
-        }
-      }
+      // {
+      //   name: 'DenyInternetOutBoundOverwrite'
+      //   properties: {
+      //     protocol: '*'
+      //     sourcePortRange: '*'
+      //     destinationPortRange: '*'
+      //     sourceAddressPrefix: '*'
+      //     destinationAddressPrefix: 'Internet'
+      //     access: 'Deny'
+      //     priority: 400
+      //     direction: 'Outbound'
+      //   }
+      // }
     ]
   }
 }
