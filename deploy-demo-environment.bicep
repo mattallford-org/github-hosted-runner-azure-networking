@@ -59,7 +59,6 @@ module virtualNetwork 'br/public:avm/res/network/virtual-network:0.1.5' = {
   }
 }
 
-
 module privateDnsZone 'br/public:avm/res/network/private-dns-zone:0.2.4' = {
   name: 'privatelink.vaultcore.azure.net'
   scope: resourceGroup(rg.name)
